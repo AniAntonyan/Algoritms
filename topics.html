@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Topics - Algorithms Learning" data-hy="Թեմաներ - Ալգորիթմների ուսուցում">Թեմաներ - Ալգորիթմների ուսուցում</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <h1 data-en="Algorithm Learning" data-hy="Ալգորիթմների ուսուցում">Ալգորիթմների ուսուցում</h1>
+            <p data-en="Easy lessons, clear steps, friendly learning." data-hy="Հեշտ դասեր, պարզ քայլեր, բարեկամ ուսուցում.">Հեշտ դասեր, պարզ քայլեր, բարեկամ ուսուցում.</p>
+        </div>
+        <div class="header-actions">
+            <button id="languageSwitch" aria-label="Change language" data-en="EN" data-hy="HY">EN</button>
+            <a href="#" id="openAuthModalBtn" data-en="Login / Register" data-hy="Մուտք / Գրանցում">Մուտք / Գրանցում</a>
+        </div>
+    </header>
+
+    <nav class="top-nav">
+        <a href="index.html#home" data-en="Home" data-hy="Գլխավոր">Գլխավոր</a>
+        <a href="topics.html" data-en="Topics" data-hy="Թեմաներ">Թեմաներ</a>
+        <a href="tests.html" data-en="Tests" data-hy="Թեստեր">Թեստեր</a>
+        <a href="index.html#about" data-en="About" data-hy="Մեր մասին">Մեր մասին</a>
+    </nav>
+
+    <main>
+        <section id="topics" class="lessons" data-aos="fade-up" data-aos-duration="1000">
+            <h2 data-en="Lessons" data-hy="Դասեր">Դասեր</h2>
+            <div class="details-list">
+                <details open data-aos="fade-up" data-aos-delay="100">
+                    <summary>
+                        <span data-en="Lesson 1: What is an Algorithm?" data-hy="Դաս 1. Ի՞նչ է ալգորիթմը">Դաս 1. Ի՞նչ է ալգորիթմը</span>
+                    </summary>
+                    <div class="lesson-body">
+                        <div class="lesson-block">
+                            <h3 data-en="Video Lesson" data-hy="Տեսադաս">Տեսադաս</h3>
+                            <div class="video-box">
+                                <video width="100%" controls style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                                    <source src="Պատրաստած_տեսանյութի_վրա_ավելա.mp4" type="video/mp4">
+                                    Ձեր զննարկիչը չի ապահովում տեսանյութերի նվագարկումը:
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="lesson-block">
+                            <h3 data-en="Theory" data-hy="Տեսական մասը">Տեսական մասը</h3>
+                            <p data-en="An algorithm is a list of easy steps that tells a computer what to do. Think of it as a simple recipe for solving a problem." data-hy="Ալգորիթմը հեշտ քայլերի ցուցակ է, որը ասում է համակարգչին, թե ինչ պետք է անի։ Ենթադրենք դա բաղադրատոմս է, որը մեզ տալիս է խնդիրը լուծելու ուղին. ">Ալգորիթմը հեշտ քայլերի ցուցակ է, որը ասում է համակարգչին, թե ինչ պետք է անի։ Ենթադրենք դա բաղադրատոմս է, որը մեզ տալիս է խնդիրը լուծելու ուղին.</p>
+                            <img src="Ալգորիթմների_հիմունքների_ուսումնական_ինֆոգրաֆիկա.png" alt="Algorithm fundamentals infographic" style="max-width: 100%; border-radius: 12px; margin-top: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </div>
+
+                        <div class="lesson-block quiz">
+                            <h3 data-en="Quick Check" data-hy="Ամփոփ թեստ">Ամփոփ թեստ</h3>
+                            <form class="quiz-form">
+                                <div class="question">
+                                    <p data-en="1. What is an algorithm like?" data-hy="1. Ալգորիթմը նման է՞ ինչի՞">1. Ալգորիթմը նման է՞ ինչի՞</p>
+                                    <label><input type="radio" name="lesson1" value="a"> <span data-en="A recipe" data-hy="Բաղադրատոմս">Բաղադրատոմս</span></label>
+                                    <label><input type="radio" name="lesson1" value="b"> <span data-en="A random guess" data-hy="Ձևավորվող հանելուկ">Ձևավորվող հանելուկ</span></label>
+                                </div>
+                                <div class="question">
+                                    <p data-en="2. Does it have steps?" data-hy="2. Արդյոք ունի քայլեր?">2. Արդյոք ունի քայլեր?</p>
+                                    <label><input type="radio" name="lesson1b" value="a"> <span data-en="Yes" data-hy="Այո">Այո</span></label>
+                                    <label><input type="radio" name="lesson1b" value="b"> <span data-en="No" data-hy="Ոչ">Ոչ</span></label>
+                                </div>
+                                <button type="button" data-en="Check Answers" data-hy="Ստուգել պատասխանները">Ստուգել պատասխանները</button>
+                                <div class="quiz-result" aria-live="polite"></div>
+                            </form>
+                        </div>
+
+                        <div class="lesson-block">
+                            <h3 data-en="Assignment" data-hy="Առաջադրանք">Առաջադրանք</h3>
+                            <p data-en="Write a short list of steps for making a sandwich. That is your first algorithm." data-hy="Գրիր քայլ առ քայլ, թե ինչպես պատրաստել սենդվիչ: դա քո առաջին ալգորիթմն է.">Գրիր քայլ առ քայլ, թե ինչպես պատրաստել սենդվիչ: դա քո առաջին ալգորիթմն է.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details data-aos="fade-up" data-aos-delay="200">
+                    <summary>
+                        <span data-en="Lesson 2: Steps and Order" data-hy="Դաս 2. Քայլեր և հերթականություն">Դաս 2. Քայլեր և հերթականություն</span>
+                    </summary>
+                    <div class="lesson-body">
+                        <div class="lesson-block">
+                            <h3 data-en="Video Lesson" data-hy="Տեսադաս">Տեսադաս</h3>
+                            <div class="video-box">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/amryKgzNXcA" title="Algorithm steps" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="lesson-block">
+                            <h3 data-en="Theory" data-hy="Տեսական մասը">Տեսական մասը</h3>
+                            <p data-en="The order of steps matters. The computer does each instruction one by one, so we must write them clearly." data-hy="Քայլերի հերթը կարևոր է, քանի որ համակարգիչը անում է յուրաքանչյուր հրահանգ առանձին: մենք պետք է դրանք գրենք պարզ և ուղիղ.">Քայլերի հերթը կարևոր է, քանի որ համակարգիչը անում է յուրաքանչյուր հրահանգ առանձին: մենք պետք է դրանք գրենք պարզ և ուղիղ.</p>
+                        </div>
+
+                        <div class="lesson-block quiz">
+                            <h3 data-en="Quick Check" data-hy="Ամփոփ թեստ">Ամփոփ թեստ</h3>
+                            <form class="quiz-form">
+                                <div class="question">
+                                    <p data-en="1. What happens when steps are not clear?" data-hy="1. Ի՞նչ է պատահում, եթե քայլերը չկան պարզ?">1. Ի՞նչ է պատահում, եթե քայլերը չկան պարզ?</p>
+                                    <label><input type="radio" name="lesson2" value="a"> <span data-en="The computer is confused" data-hy="Համակարգիչը շփոթվում է">Համակարգիչը շփոթվում է</span></label>
+                                    <label><input type="radio" name="lesson2" value="b"> <span data-en="The answer is always right" data-hy="Պատասխանը միշտ ճիշտ է">Պատասխանը միշտ ճիշտ է</span></label>
+                                </div>
+                                <div class="question">
+                                    <p data-en="2. Should the steps be in order?" data-hy="2. Արդյոք պետք է քայլերը ճիշտ հերթով լինեն?">2. Արդյոք պետք է քայլերը ճիշտ հերթով լինեն?</p>
+                                    <label><input type="radio" name="lesson2b" value="a"> <span data-en="Yes" data-hy="Այո">Այո</span></label>
+                                    <label><input type="radio" name="lesson2b" value="b"> <span data-en="No" data-hy="Ոչ">Ոչ</span></label>
+                                </div>
+                                <button type="button" data-en="Check Answers" data-hy="Ստուգել պատասխանները">Ստուգել պատասխանները</button>
+                                <div class="quiz-result" aria-live="polite"></div>
+                            </form>
+                        </div>
+
+                        <div class="lesson-block">
+                            <h3 data-en="Assignment" data-hy="Առաջադրանք">Առաջադրանք</h3>
+                            <p data-en="List the steps to get ready for school in the correct order." data-hy="Բացագրիր դպրոց գնալու պատրաստվելու քայլերը ճիշտ հերթականությամբ.">Բացագրիր դպրոց գնալու պատրաստվելու քայլերը ճիշտ հերթականությամբ.</p>
+                        </div>
+
+                        <div class="lesson-block interactive-section" id="drag-drop-game">
+                            <h3 class="interactive-title">
+                                <span data-en="Interactive Game: Order the Steps" data-hy="Ինտերակտիվ խաղ. Դասավորիր քայլերը">Ինտերակտիվ խաղ. Դասավորիր քայլերը</span>
+                            </h3>
+                            <div class="game-tabs">
+                                <button type="button" class="game-tab active" id="tab-sandwich" data-task="sandwich" data-en="Make a Sandwich" data-hy="Պատրաստել սենդվիչ">Պատրաստել սենդվիչ</button>
+                                <button type="button" class="game-tab" id="tab-school" data-task="school" data-en="Go to School" data-hy="Գնալ դպրոց">Գնալ դպրոց</button>
+                            </div>
+                            <div class="steps-list" id="steps-container">
+                                <!-- Steps will be loaded dynamically by script.js -->
+                            </div>
+                            <div class="game-actions">
+                                <button type="button" id="check-game-btn" data-en="Verify" data-hy="Ստուգել">Ստուգել</button>
+                                <button type="button" id="reset-game-btn" class="reset-btn" data-en="Reset" data-hy="Վերակայել">Վերակայել</button>
+                                <div class="game-result" id="game-feedback"></div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <details data-aos="fade-up" data-aos-delay="300">
+                    <summary>
+                        <span data-en="Lesson 3: Simple Structures" data-hy="Դաս 3. Պարզ կառուցվածքներ">Դաս 3. Պարզ կառուցվածքներ</span>
+                    </summary>
+                    <div class="lesson-body">
+                        <div class="lesson-block">
+                            <h3 data-en="Video Lesson" data-hy="Տեսադաս">Տեսադաս</h3>
+                            <div class="video-box">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6hfOvs8pY1k" title="Algorithm structures" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="lesson-block">
+                            <h3 data-en="Theory" data-hy="Տեսական մասը">Տեսական մասը</h3>
+                            <p data-en="Algorithms can repeat actions or choose between two paths. That is how they solve one problem in different ways." data-hy="Ալգորիթմները կարող են կրկնել գործողություններ կամ ընտրել երկու տարբեր ուղի։ Այդպես դրանք լուծում են խնդիրները տարբեր ձևերով.">Ալգորիթմները կարող են կրկնել գործողություններ կամ ընտրել երկու տարբեր ուղի։ Այդպես դրանք լուծում են խնդիրները տարբեր ձևերով.</p>
+                            <img src="Ալգորիթմների_հիմունքներ,_տրամաբանություն_և_կառուցվածք.png" alt="Algorithm logic and structure" style="max-width: 100%; border-radius: 12px; margin-top: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        </div>
+
+                        <div class="lesson-block quiz">
+                            <h3 data-en="Quick Check" data-hy="Ամփոփ թեստ">Ամփոփ թեստ</h3>
+                            <form class="quiz-form">
+                                <div class="question">
+                                    <p data-en="1. What does a repeat step do?" data-hy="1. Ի՞նչ է անում կրկնությունը?">1. Ի՞նչ է անում կրկնությունը?</p>
+                                    <label><input type="radio" name="lesson3" value="a"> <span data-en="Runs the same action again" data-hy="Նույն գործողությունը կրկնվում է">Նույն գործողությունը կրկնվում է</span></label>
+                                    <label><input type="radio" name="lesson3" value="b"> <span data-en="Skips the action" data-hy="Գործողությունը բաց է թողնվում">Գործողությունը բաց է թողնվում</span></label>
+                                </div>
+                                <div class="question">
+                                    <p data-en="2. What is a choice in an algorithm?" data-hy="2. Ի՞նչ է ընտրությունը ալգորիթմում?">2. Ի՞նչ է ընտրությունը ալգորիթմում?</p>
+                                    <label><input type="radio" name="lesson3b" value="a"> <span data-en="Selects a path based on a condition" data-hy="Ընտրում է ուղի պայմանից կախված">Ընտրում է ուղի պայմանից կախված</span></label>
+                                    <label><input type="radio" name="lesson3b" value="b"> <span data-en="Writes text on the screen" data-hy="Տեքստ է գրում էկրանին">Տեքստ է գրում էկրանին</span></label>
+                                </div>
+                                <button type="button" data-en="Check Answers" data-hy="Ստուգել պատասխանները">Ստուգել պատասխանները</button>
+                                <div class="quiz-result" aria-live="polite"></div>
+                            </form>
+                        </div>
+
+                        <div class="lesson-block">
+                            <h3 data-en="Assignment" data-hy="Առաջադրանք">Առաջադրանք</h3>
+                            <p data-en="Describe a simple choice: if it is raining, take an umbrella, otherwise wear sunglasses." data-hy="Նկարիր պարզ ընտրություն. եթե անձրև է, վերցրու անձրևանոց, այլապես՝ արևային ակնոցներ.">Նկարիր պարզ ընտրություն. եթե անձրև է, վերցրու անձրևանոց, այլապես՝ արևային ակնոցներ.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details data-aos="fade-up" data-aos-delay="400">
+                    <summary>
+                        <span data-en="Lesson 4: Loops and Repetition" data-hy="Դաս 4. Ցիկլեր և կրկնություն">Դաս 4. Ցիկլեր և կրկնություն</span>
+                    </summary>
+                    <div class="lesson-body">
+                        <div class="lesson-block">
+                            <h3 data-en="Video Lesson" data-hy="Տեսադաս">Տեսադաս</h3>
+                            <div class="video-box">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/kM9ASKAni_s" title="Loops" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="lesson-block">
+                            <h3 data-en="Theory" data-hy="Տեսական մասը">Տեսական մասը</h3>
+                            <p data-en="Loops allow us to repeat an action multiple times without writing the same instruction over and over again." data-hy="Ցիկլերը թույլ են տալիս կրկնել գործողությունը բազմաթիվ անգամներ՝ առանց նույն հրահանգը նորից ու նորից գրելու:">Ցիկլերը թույլ են տալիս կրկնել գործողությունը բազմաթիվ անգամներ՝ առանց նույն հրահանգը նորից ու նորից գրելու:</p>
+                        </div>
+
+                        <div class="lesson-block quiz">
+                            <h3 data-en="Quick Check" data-hy="Ամփոփ թեստ">Ամփոփ թեստ</h3>
+                            <form class="quiz-form">
+                                <div class="question">
+                                    <p data-en="1. Why do we use loops?" data-hy="1. Ինչո՞ւ ենք օգտագործում ցիկլեր:">1. Ինչո՞ւ ենք օգտագործում ցիկլեր:</p>
+                                    <label><input type="radio" name="lesson4" value="a"> <span data-en="To repeat an action" data-hy="Գործողություն կրկնելու համար">Գործողություն կրկնելու համար</span></label>
+                                    <label><input type="radio" name="lesson4" value="b"> <span data-en="To stop the program" data-hy="Ծրագիրը կանգնեցնելու համար">Ծրագիրը կանգնեցնելու համար</span></label>
+                                </div>
+                                <div class="question">
+                                    <p data-en="2. Does a loop run forever?" data-hy="2. Արդյո՞ք ցիկլը աշխատում է հավերժ:">2. Արդյո՞ք ցիկլը աշխատում է հավերժ:</p>
+                                    <label><input type="radio" name="lesson4b" value="a"> <span data-en="Only if we don't tell it when to stop" data-hy="Միայն եթե չենք ասում, թե երբ կանգնի">Միայն եթե չենք ասում, թե երբ կանգնի</span></label>
+                                    <label><input type="radio" name="lesson4b" value="b"> <span data-en="Yes, always" data-hy="Այո, միշտ">Այո, միշտ</span></label>
+                                </div>
+                                <button type="button" data-en="Check Answers" data-hy="Ստուգել պատասխանները">Ստուգել պատասխանները</button>
+                                <div class="quiz-result" aria-live="polite"></div>
+                            </form>
+                        </div>
+
+                        <div class="lesson-block">
+                            <h3 data-en="Assignment" data-hy="Առաջադրանք">Առաջադրանք</h3>
+                            <p data-en="Write down the steps to clap your hands 5 times using a loop." data-hy="Գրեք քայլեր, թե ինչպես ծափահարել 5 անգամ՝ օգտագործելով ցիկլ:">Գրեք քայլեր, թե ինչպես ծափահարել 5 անգամ՝ օգտագործելով ցիկլ:</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details data-aos="fade-up" data-aos-delay="500">
+                    <summary>
+                        <span data-en="Lesson 5: Searching Algorithms" data-hy="Դաս 5. Որոնման ալգորիթմներ">Դաս 5. Որոնման ալգորիթմներ</span>
+                    </summary>
+                    <div class="lesson-body">
+                        <div class="lesson-block">
+                            <h3 data-en="Video Lesson" data-hy="Տեսադաս">Տեսադաս</h3>
+                            <div class="video-box">
+                                <video width="100%" controls style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                                    <source src="5.mp4" type="video/mp4">
+                                    Ձեր զննարկիչը չի ապահովում տեսանյութերի նվագարկումը:
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="lesson-block">
+                            <h3 data-en="Theory" data-hy="Տեսական մասը">Տեսական մասը</h3>
+                            <p data-en="Searching algorithms help us find a specific item inside a large collection, like finding a word in a dictionary." data-hy="Որոնման ալգորիթմները օգնում են մեզ գտնել կոնկրետ տարր մեծ հավաքածուի մեջ, օրինակ՝ գտնել բառ բառարանում:">Որոնման ալգորիթմները օգնում են մեզ գտնել կոնկրետ տարր մեծ հավաքածուի մեջ, օրինակ՝ գտնել բառ բառարանում:</p>
+                        </div>
+
+                        <div class="lesson-block quiz">
+                            <h3 data-en="Quick Check" data-hy="Ամփոփ թեստ">Ամփոփ թեստ</h3>
+                            <form class="quiz-form">
+                                <div class="question">
+                                    <p data-en="1. What is the goal of a searching algorithm?" data-hy="1. Ո՞րն է որոնման ալգորիթմի նպատակը:">1. Ո՞րն է որոնման ալգորիթմի նպատակը:</p>
+                                    <label><input type="radio" name="lesson5" value="a"> <span data-en="To find an item" data-hy="Գտնել տարրը">Գտնել տարրը</span></label>
+                                    <label><input type="radio" name="lesson5" value="b"> <span data-en="To hide an item" data-hy="Թաքցնել տարրը">Թաքցնել տարրը</span></label>
+                                </div>
+                                <div class="question">
+                                    <p data-en="2. Is binary search faster than linear search?" data-hy="2. Արդյո՞ք երկուական որոնումը ավելի արագ է, քան գծայինը:">2. Արդյո՞ք երկուական որոնումը ավելի արագ է, քան գծայինը:</p>
+                                    <label><input type="radio" name="lesson5b" value="a"> <span data-en="Yes, in a sorted list" data-hy="Այո, տեսակավորված ցուցակում">Այո, տեսակավորված ցուցակում</span></label>
+                                    <label><input type="radio" name="lesson5b" value="b"> <span data-en="No" data-hy="Ոչ">Ոչ</span></label>
+                                </div>
+                                <button type="button" data-en="Check Answers" data-hy="Ստուգել պատասխանները">Ստուգել պատասխանները</button>
+                                <div class="quiz-result" aria-live="polite"></div>
+                            </form>
+                        </div>
+
+                        <div class="lesson-block">
+                            <h3 data-en="Assignment" data-hy="Առաջադրանք">Առաջադրանք</h3>
+                            <p data-en="Think of how you would find a specific page in a 500-page book." data-hy="Մտածեք, թե ինչպես կգտնեիք որոշակի էջ 500 էջանոց գրքում:">Մտածեք, թե ինչպես կգտնեիք որոշակի էջ 500 էջանոց գրքում:</p>
+                        </div>
+
+                        <div class="lesson-block interactive-section" id="search-simulation">
+                            <h3 class="interactive-title">
+                                <span data-en="Interactive Simulation: Searching Algorithms" data-hy="Ինտերակտիվ սիմուլյացիա. Որոնման ալգորիթմներ">Ինտերակտիվ սիմուլյացիա. Որոնման ալգորիթմներ</span>
+                            </h3>
+                            <div class="controls-row">
+                                <select id="search-algorithm">
+                                    <option value="linear" data-en="Linear Search" data-hy="Գծային որոնում">Գծային որոնում</option>
+                                    <option value="binary" data-en="Binary Search" data-hy="Երկուական որոնում">Երկուական որոնում</option>
+                                </select>
+                                <input type="number" id="search-target" placeholder="Target" min="1" max="100" value="42" style="width: 120px;">
+                                <button type="button" id="start-search-btn" data-en="Start" data-hy="Սկսել">Սկսել</button>
+                                <button type="button" id="reset-search-btn" class="reset-btn" data-en="Reset" data-hy="Վերակայել">Վերակայել</button>
+                                <div class="speed-control">
+                                    <span data-en="Speed:" data-hy="Արագություն՝">Արագություն՝</span>
+                                    <input type="range" id="search-speed" min="100" max="2000" step="100" value="800">
+                                </div>
+                            </div>
+                            <div class="visualizer-wrapper">
+                                <div class="array-container" id="array-visualizer">
+                                    <!-- Array boxes will be loaded dynamically by script.js -->
+                                </div>
+                                <div class="pointer-badges" id="pointer-badges-container">
+                                    <!-- Binary pointer badges -->
+                                </div>
+                            </div>
+                            <div class="status-message" id="search-status" data-en="Enter a number and click 'Start' to begin simulation." data-hy="Մուտքագրեք թիվ և սեղմեք «Սկսել»՝ սիմուլյացիան սկսելու համար:">Մուտքագրեք թիվ և սեղմեք «Սկսել»՝ սիմուլյացիան սկսելու համար:</div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+        
+        <section id="code-playground" class="lessons" data-aos="fade-up" data-aos-duration="1000" style="margin-top: 40px;">
+            <h2 data-en="Code Environment" data-hy="Կոդի միջավայր">Կոդի միջավայր</h2>
+            <div class="interactive-section">
+                <p data-en="Select a programming language, write code below, and click 'Run' to see the result." data-hy="Ընտրեք ծրագրավորման լեզու, գրեք ձեր կոդը ստորև և սեղմեք «Աշխատեցնել»՝ արդյունքը տեսնելու համար:">Ընտրեք ծրագրավորման լեզու, գրեք ձեր կոդը ստորև և սեղմեք «Աշխատեցնել»՝ արդյունքը տեսնելու համար:</p>
+                <div class="controls-row" style="margin-top: 15px;">
+                    <select id="code-language-select" style="padding: 10px 16px; border: 2px solid var(--primary-light); border-radius: 10px; background: white; font-weight: 600; color: var(--text-main); cursor: pointer; outline: none;">
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                    </select>
+                </div>
+                <div style="margin: 15px 0; border: 2px solid var(--primary-light); border-radius: 12px; overflow: hidden; text-align: left;">
+                    <textarea id="code-editor">
+// Գրեք ձեր կոդը այստեղ
+// Օրինակ՝
+let x = 5;
+let y = 10;
+console.log("Արդյունք:", x + y);</textarea>
+                </div>
+                <div class="controls-row">
+                    <button type="button" id="run-code-btn" data-en="Run Code" data-hy="Աշխատեցնել">Աշխատեցնել</button>
+                    <button type="button" id="clear-code-btn" class="reset-btn" data-en="Clear Output" data-hy="Մաքրել">Մաքրել</button>
+                </div>
+                <div id="code-output" style="background: #1e1e1e; color: #a6e22e; padding: 15px; border-radius: 12px; min-height: 80px; font-family: monospace; font-size: 1.1rem; white-space: pre-wrap; text-align: left; margin-top: 15px;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-en="Designed for easy algorithm learning." data-hy="Ստեղծված է ալգորիթմները հեշտ սովորելու համար.">Ստեղծված է ալգորիթմները հեշտ սովորելու համար.</p>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeAuthModalBtn">&times;</span>
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="loginTabBtn" data-en="Login" data-hy="Մուտք">Մուտք</button>
+                <button class="auth-tab" id="registerTabBtn" data-en="Register" data-hy="Գրանցում">Գրանցում</button>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label for="loginEmail" data-en="Email" data-hy="Էլ. փոստ">Էլ. փոստ</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword" data-en="Password" data-hy="Գաղտնաբառ">Գաղտնաբառ</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="submit-btn" data-en="Log In" data-hy="Մուտք գործել">Մուտք գործել</button>
+            </form>
+
+            <!-- Register Form -->
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="regName" data-en="Full Name" data-hy="Անուն Ազգանուն">Անուն Ազգանուն</label>
+                    <input type="text" id="regName" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail" data-en="Email" data-hy="Էլ. փոստ">Էլ. փոստ</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword" data-en="Password" data-hy="Գաղտնաբառ">Գաղտնաբառ</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <button type="submit" class="submit-btn" data-en="Register" data-hy="Գրանցվել">Գրանցվել</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/python/python.min.js"></script>
+    <!-- Pyodide -->
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Tests - Algorithms Learning" data-hy="Թեստեր - Ալգորիթմների ուսուցում">Թեստեր - Ալգորիթմների ուսուցում</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <h1 data-en="Algorithm Learning" data-hy="Ալգորիթմների ուսուցում">Ալգորիթմների ուսուցում</h1>
+            <p data-en="Easy lessons, clear steps, friendly learning." data-hy="Հեշտ դասեր, պարզ քայլեր, բարեկամ ուսուցում.">Հեշտ դասեր, պարզ քայլեր, բարեկամ ուսուցում.</p>
+        </div>
+        <div class="header-actions">
+            <button id="languageSwitch" aria-label="Change language" data-en="EN" data-hy="HY">EN</button>
+            <a href="#" id="openAuthModalBtn" data-en="Login / Register" data-hy="Մուտք / Գրանցում">Մուտք / Գրանցում</a>
+        </div>
+    </header>
+
+    <nav class="top-nav">
+        <a href="index.html#home" data-en="Home" data-hy="Գլխավոր">Գլխավոր</a>
+        <a href="topics.html" data-en="Topics" data-hy="Թեմաներ">Թեմաներ</a>
+        <a href="tests.html" data-en="Tests" data-hy="Թեստեր">Թեստեր</a>
+        <a href="index.html#about" data-en="About" data-hy="Մեր մասին">Մեր մասին</a>
+    </nav>
+
+    <main>
+        <section id="tests" class="lessons" data-aos="fade-up" data-aos-duration="1000">
+            <h2 data-en="Final Exam & Quizzes" data-hy="Ամփոփիչ թեստեր">Ամփոփիչ թեստեր</h2>
+            <p data-en="Test your knowledge on all algorithm topics." data-hy="Ստուգեք ձեր գիտելիքները բոլոր ալգորիթմների թեմաներից:" style="margin-bottom: 30px; font-size: 1.1rem; color: var(--text-muted);"></p>
+            
+            <div class="lesson-block quiz" data-aos="zoom-in" data-aos-delay="100">
+                <h3 data-en="Comprehensive Algorithm Quiz" data-hy="Ալգորիթմների ընդհանուր թեստ">Ալգորիթմների ընդհանուր թեստ</h3>
+                <form class="quiz-form">
+                    <div class="question" data-answer="b">
+                        <p data-en="1. What is the main purpose of an algorithm?" data-hy="1. Ո՞րն է ալգորիթմի հիմնական նպատակը:">1. Ո՞րն է ալգորիթմի հիմնական նպատակը:</p>
+                        <label><input type="radio" name="final1" value="a"> <span data-en="To look nice on the screen" data-hy="Էկրանին գեղեցիկ երևալը">Էկրանին գեղեցիկ երևալը</span></label>
+                        <label><input type="radio" name="final1" value="b"> <span data-en="To solve a problem step by step" data-hy="Խնդիրը քայլ առ քայլ լուծելը">Խնդիրը քայլ առ քայլ լուծելը</span></label>
+                        <label><input type="radio" name="final1" value="c"> <span data-en="To guess random answers" data-hy="Պատահական պատասխաններ գուշակելը">Պատահական պատասխաններ գուշակելը</span></label>
+                    </div>
+                    
+                    <div class="question" data-answer="a">
+                        <p data-en="2. Why is the order of steps important?" data-hy="2. Ինչո՞ւ է քայլերի հերթականությունը կարևոր:">2. Ինչո՞ւ է քայլերի հերթականությունը կարևոր:</p>
+                        <label><input type="radio" name="final2" value="a"> <span data-en="Computers execute instructions one by one" data-hy="Համակարգիչները հրահանգները կատարում են հերթով">Համակարգիչները հրահանգները կատարում են հերթով</span></label>
+                        <label><input type="radio" name="final2" value="b"> <span data-en="It makes the code longer" data-hy="Այն դարձնում է կոդը երկար">Այն դարձնում է կոդը երկար</span></label>
+                    </div>
+
+                    <div class="question" data-answer="c">
+                        <p data-en="3. What does a 'loop' do?" data-hy="3. Ի՞նչ է անում «ցիկլը» (loop):">3. Ի՞նչ է անում «ցիկլը» (loop):</p>
+                        <label><input type="radio" name="final3" value="a"> <span data-en="Makes a choice between two paths" data-hy="Ընտրություն է կատարում երկու ուղիների միջև">Ընտրություն է կատարում երկու ուղիների միջև</span></label>
+                        <label><input type="radio" name="final3" value="b"> <span data-en="Stops the program entirely" data-hy="Ամբողջությամբ կանգնեցնում է ծրագիրը">Ամբողջությամբ կանգնեցնում է ծրագիրը</span></label>
+                        <label><input type="radio" name="final3" value="c"> <span data-en="Repeats a set of instructions" data-hy="Կրկնում է հրահանգների խումբը">Կրկնում է հրահանգների խումբը</span></label>
+                    </div>
+
+                    <div class="question" data-answer="a">
+                        <p data-en="4. Which search method is generally faster in a sorted list?" data-hy="4. Ո՞ր որոնման մեթոդն է ավելի արագ տեսակավորված ցուցակում:">4. Ո՞ր որոնման մեթոդն է ավելի արագ տեսակավորված ցուցակում:</p>
+                        <label><input type="radio" name="final4" value="a"> <span data-en="Binary Search" data-hy="Երկուական որոնում (Binary Search)">Երկուական որոնում (Binary Search)</span></label>
+                        <label><input type="radio" name="final4" value="b"> <span data-en="Linear Search" data-hy="Գծային որոնում (Linear Search)">Գծային որոնում (Linear Search)</span></label>
+                    </div>
+
+                    <div class="question" data-answer="b">
+                        <p data-en="5. Algorithms can only be used on computers." data-hy="5. Ալգորիթմները կարող են կիրառվել միայն համակարգիչների վրա:">5. Ալգորիթմները կարող են կիրառվել միայն համակարգիչների վրա:</p>
+                        <label><input type="radio" name="final5" value="a"> <span data-en="True" data-hy="Ճիշտ է">Ճիշտ է</span></label>
+                        <label><input type="radio" name="final5" value="b"> <span data-en="False (e.g. recipe)" data-hy="Սխալ է (օր. բաղադրատոմս)">Սխալ է (օր. բաղադրատոմս)</span></label>
+                    </div>
+
+                    <button type="button" data-en="Check Exam Answers" data-hy="Ստուգել պատասխանները">Ստուգել պատասխանները</button>
+                    <div class="quiz-result" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-en="Designed for easy algorithm learning." data-hy="Ստեղծված է ալգորիթմները հեշտ սովորելու համար.">Ստեղծված է ալգորիթմները հեշտ սովորելու համար.</p>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeAuthModalBtn">&times;</span>
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="loginTabBtn" data-en="Login" data-hy="Մուտք">Մուտք</button>
+                <button class="auth-tab" id="registerTabBtn" data-en="Register" data-hy="Գրանցում">Գրանցում</button>
+            </div>
+            
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label for="loginEmail" data-en="Email" data-hy="Էլ. փոստ">Էլ. փոստ</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword" data-en="Password" data-hy="Գաղտնաբառ">Գաղտնաբառ</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="submit-btn" data-en="Log In" data-hy="Մուտք գործել">Մուտք գործել</button>
+            </form>
+
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="regName" data-en="Full Name" data-hy="Անուն Ազգանուն">Անուն Ազգանուն</label>
+                    <input type="text" id="regName" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail" data-en="Email" data-hy="Էլ. փոստ">Էլ. փոստ</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword" data-en="Password" data-hy="Գաղտնաբառ">Գաղտնաբառ</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <button type="submit" class="submit-btn" data-en="Register" data-hy="Գրանցվել">Գրանցվել</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

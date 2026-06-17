@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Algorithms Learning" data-hy="Ալգորիթմների ուսուցում">Ալգորիթմների ուսուցում</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <h1 data-en="Algorithm Learning" data-hy="Ալգորիթմների ուսուցում">Ալգորիթմների ուսուցում</h1>
+            <p data-en="Easy lessons, clear steps, friendly learning." data-hy="Հետաքրքիր դասեր, պարզ քայլեր, հեշտ ուսուցում.">Հետաքրքիր դասեր, պարզ քայլեր, հեշտ ուսուցում.</p>
+        </div>
+        <div class="header-actions">
+            <button id="languageSwitch" aria-label="Change language" data-en="EN" data-hy="HY">EN</button>
+            <a href="#" id="openAuthModalBtn" data-en="Login / Register" data-hy="Մուտք / Գրանցում">Մուտք / Գրանցում</a>
+        </div>
+    </header>
+
+    <nav class="top-nav">
+        <a href="index.html#home" data-en="Home" data-hy="Գլխավոր">Գլխավոր</a>
+        <a href="topics.html" data-en="Topics" data-hy="Թեմաներ">Թեմաներ</a>
+        <a href="tests.html" data-en="Tests" data-hy="Թեստեր">Թեստեր</a>
+        <a href="index.html#about" data-en="About" data-hy="Մեր մասին">Մեր մասին</a>
+    </nav>
+
+    <main>
+        <section id="home" class="hero" data-aos="fade-up" data-aos-duration="1000">
+            <div class="hero-text">
+                <h2 data-en="Learn algorithms step by step" data-hy="Որոշիր ալգորիթմները քայլ առ քայլ">Որոշիր ալգորիթմները քայլ առ քայլ</h2>
+                <p data-en="This website is made for students who want a simple and friendly introduction to algorithms. Each lesson has video, theory, quizzes and practice tasks." data-hy="Այս կայքը ստեղծվել է նրանց համար, ովքեր ուզում են պարզ և ընկերական գլխավոր ուղեցույց ալգորիթմների մեջ. յուրաքանչյուր դաս ունի տեսադաս, տեսական մասը, թեստեր և կիրառական առաջադրանքներ.">Այս կայքը ստեղծվել է նրանց համար, ովքեր ուզում են պարզ և ընկերական գլխավոր ուղեցույց ալգորիթմների մեջ. յուրաքանչյուր դաս ունի տեսադաս, տեսական մասը, թեստեր և կիրառական առաջադրանքներ.</p>
+            </div>
+            <div class="hero-image" style="margin-bottom: 40px; text-align: center;">
+                <img src="Gemini_Generated_Image_b46635b46635b466.png" alt="Algorithm concept" style="max-width: 100%; width: 600px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin: 0 auto;" data-aos="zoom-in-up" data-aos-duration="1500">
+            </div>
+            <div class="hero-cards">
+                <article class="hero-card" data-aos="zoom-in" data-aos-delay="100">
+                    <h3 data-en="Clear concepts" data-hy="Պարզ հասկացություններ">Պարզ հասկացություններ</h3>
+                    <p data-en="We explain each idea in plain language so everyone can follow." data-hy="Յուրաքանչյուրը կարող է հետևել պարզ բառերով բացատրություններին.">Յուրաքանչյուրն է կարող է հետևել պարզ բառերով բացատրություններին.</p>
+                </article>
+                <article class="hero-card" data-aos="zoom-in" data-aos-delay="200">
+                    <h3 data-en="Practice tasks" data-hy="Վարժանքներ">Վարժանքներ</h3>
+                    <p data-en="Learn by doing short assignments and checking your answers." data-hy="Սովորիր կատարելով համեմատաբար կարճ առաջադրանքներ և ստուգելով պատասխանները.">Սովորիր կատարելով համեմատաբար կարճ առաջադրանքներ և ստուգելով պատասխանները.</p>
+                </article>
+                <article class="hero-card" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 data-en="Quick tests" data-hy="Ամփոփ թեստեր">Ամփոփ թեստեր</h3>
+                    <p data-en="Use simple quizzes to make sure the idea is clear after each lesson." data-hy="Օգտագործիր պարզ թեստերը ՝ ամրապնդելու այն, ինչ նորացրեցիր:">Օգտագործիր պարզ թեստերը՝ ամրապնդելու այն, ինչ նորացրեցիր:</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="about" data-aos="fade-up" data-aos-duration="1000">
+            <h2 data-en="How to use this site" data-hy="Ինչպես օգտագործել այս կայքը">Ինչպես օգտագործել այս կայքը</h2>
+            <div class="about-content" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; justify-content: space-between; margin-top: 20px; text-align: left;">
+                <p data-en="Open each lesson to see the video, read the short theory part, try the quiz and then solve the practice task. Use the language button to switch between Armenian and English." data-hy="Բացեք յուրաքանչյուր դասը՝ տեսնելու տեսանյութը, կարդալ տեսական մասը, փորձել թեստը և լուծել գործնական առաջադրանքը. օգտագործեք լեզվի կոճակը՝ հայերենից անգլերեն անցնելու համար." style="flex: 1; min-width: 300px; font-size: 1.1rem; line-height: 1.8;">Բացեք յուրաքանչյուր դասը՝ տեսնելու տեսանյութը, կարդալ տեսական մասը, փորձել թեստը և լուծել գործնական առաջադրանքը. օգտագործեք լեզվի կոճակը՝ հայերենից անգլերեն անցնելու համար.</p>
+                <div class="about-image" style="flex: 1; min-width: 300px; text-align: center;" data-aos="fade-left">
+                    <img src="Gemini_Generated_Image_qx3cpgqx3cpgqx3c.png" alt="Learning algorithms" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin: 0 auto;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-en="Designed for easy algorithm learning." data-hy="Ստեղծված է ալգորիթմները հեշտ սովորելու համար.">Ստեղծված է ալգորիթմները հեշտ սովորելու համար.</p>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeAuthModalBtn">&times;</span>
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="loginTabBtn" data-en="Login" data-hy="Մուտք">Մուտք</button>
+                <button class="auth-tab" id="registerTabBtn" data-en="Register" data-hy="Գրանցում">Գրանցում</button>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label for="loginEmail" data-en="Email" data-hy="Էլ. փոստ">Էլ. փոստ</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword" data-en="Password" data-hy="Գաղտնաբառ">Գաղտնաբառ</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="submit-btn" data-en="Log In" data-hy="Մուտք գործել">Մուտք գործել</button>
+            </form>
+
+            <!-- Register Form -->
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="regName" data-en="Full Name" data-hy="Անուն Ազգանուն">Անուն Ազգանուն</label>
+                    <input type="text" id="regName" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail" data-en="Email" data-hy="Էլ. փոստ">Էլ. փոստ</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword" data-en="Password" data-hy="Գաղտնաբառ">Գաղտնաբառ</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <button type="submit" class="submit-btn" data-en="Register" data-hy="Գրանցվել">Գրանցվել</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
